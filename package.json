@@ -1,0 +1,11 @@
+{
+  "name": "sk-plugin-ozzberryimu",
+  "version": "0.0.1",
+  "description": "Signal K Node server plugin for the Ozzmaker IMU's",
+  "main": "index.js",
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "Chuck bowers <cjbacts2024@gmail.com>",
+  "license": "Apache-2.0"
+}
