@@ -1,38 +1,40 @@
 {
   "type": "object",
   "properties": {
-    "multipleParametersArray": {
-      "type": "array",
-      "title": "Example of multiple repeated parameters",
-      "items": {
-        "type": "object",
-        "required": [
-          "param1",
-          "param2"
-        ],
-        "properties": {
-          "param1": {
-            "type": "string",
-            "title": "Parameter 1",
-            "default": "0.0.0.0"
-          },
-          "param2": {
-            "type": "number",
-            "title": "Parameter 2",
-            "default": 12345
-          }
-        }
-      }
+    "Heading": {
+      "type": "boolean",
+      "title": "Enable Magnetic Tilt Compensated heading from IMU",
+      "default": false
     },
-    "numberParameterX": {
-      "type": "number",
-      "title": "Param X",
-      "default": 60
+    "RateOfTurn": {
+      "type": "boolean",
+      "title": "Enable Calculated Rate of turn from Magnetic heading changes",
+      "default": false
     },
-    "numberParameterY": {
+    "PitchRoll": {
+      "type": "boolean",
+      "title": "Enable Kalman Filtered Pitch and Roll measurements",
+      "default": false
+    },
+    "Temp": {
+      "type": "boolean",
+      "title": "Enable Temprature from the BMP388 on-board module",
+      "default": false
+    },
+    "Barometer": {
+      "type" : "boolean",
+      "title": "Enable Barometric Pressure from the BMP388 on-board module",
+      "default": false
+    },
+    "Altitude": {
+      "type": "boolean",
+      "title": "Enable Calculated Altitude based on Atmospheric Pressure compensated from known elevation above sea-level",
+      "default": false
+    },
+    "Elevation": {
       "type": "number",
-      "title": "Param Y",
-      "default": 360
+      "title": "Known RPi elevation for basis of Altitude calculations (in Meters)",
+      "default": 1
     }
   }
 }
